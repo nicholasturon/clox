@@ -1,3 +1,5 @@
+SRC = $(wildcard *.c)
+
 build-run:
-	clang main.c -o clox
+	clang $(SRC) -o clox
 	./clox $(ARGS)
