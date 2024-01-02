@@ -13,6 +13,7 @@ typedef struct {
     uint8_t* ip; // instruction_pointer - always points to the thing about to be run, not the thing that is running
     Value stack[STACK_MAX];
     Value* stackTop;
+    Table globals;
     Table strings;
     Obj* objects;
 } VM;
